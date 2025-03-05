@@ -7,7 +7,7 @@ import {
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Products from './pages/Products/Products';
-import Product from './pages/ProductDetail/Product';
+import ProductDetail from './pages/ProductDetail/ProductDetail';
 import Layout from './layout/Layout';
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="products" element={<Products />} />
-        <Route path="products/:id" element={<Product />} />
+        <Route path="products/:id" element={<ProductDetail />} />
       </Route>
     )
   );
