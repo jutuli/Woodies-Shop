@@ -9,6 +9,7 @@ import About from './pages/About/About';
 import Products from './pages/Products/Products';
 import ProductDetail from './pages/ProductDetail/ProductDetail';
 import Layout from './layout/Layout';
+import PageNotFound from './pages/PageNotFound/PageNotFound';
 
 function App() {
   const router = createBrowserRouter(
@@ -19,6 +20,8 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="products" element={<Products />} />
         <Route path="products/:id" element={<ProductDetail />} />
+        <Route path="*" element={<PageNotFound />} />
+        <Route path="products/*" element={<Products />} />
       </Route>
     )
   );

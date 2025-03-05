@@ -6,6 +6,7 @@ interface IProduct {
   id: string;
   name: string;
   img: string;
+  category: string;
   description: string;
 }
 
@@ -13,6 +14,7 @@ export const products: IProduct[] = [
   {
     id: 'jenson',
     name: 'Jenson',
+    category: 'living',
     img: Tisch,
     description:
       "Jenson demonstrates what designer Tim Fenby does best. Clean lines, subtle curves and an oak finish nail this season's trends. Boomerang legs add serious style points – not that this dining table needs it. Nordic retro? You got it.",
@@ -20,6 +22,7 @@ export const products: IProduct[] = [
   {
     id: 'deon',
     name: 'Deon',
+    category: 'living',
     img: Stuhl,
     description:
       "Deon's a dining chair that's designed to impress. The curved back and wooden legs are a nod to the luxe life. The velvet upholstery? So soft and inviting. It's the perfect partner to our Deon dining table.",
@@ -27,6 +30,7 @@ export const products: IProduct[] = [
   {
     id: 'krisha',
     name: 'Krisha',
+    category: 'kitchen',
     img: Schuesseln,
     description:
       "Krisha's a set of 2 bowls that are perfect for serving up salads, pasta or snacks. They're made from wood and finished with a high-gloss lacquer. The result? A super shiny finish that's easy to wipe clean.",
